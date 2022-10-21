@@ -16,22 +16,22 @@ function addEvent(){
         <input type="text" id="title${eventCount}" class="form-control" aria-label="Titel" value="Rover ">
     </div>
     <div class="input-group mb-3">
+    <div class="input-group-prepend">
+    <span class="input-group-text">Datum</span>
+    </div>
+    <input type="date" id="date${eventCount}" class="form-control" aria-label="Datum">
+    </div>
+    <div class="input-group mb-3">
+    <div class="input-group-prepend">
+    <span class="input-group-text">Ort</span>
+    </div>
+    <input type="text" id="loc${eventCount}" class="form-control" aria-label="Ort">
+    </div>
+    <div class="input-group mb-3">
         <div class="input-group-prepend">
             <span class="input-group-text">Beschreibung</span>
         </div>
-        <input type="text" id="desc${eventCount}" class="form-control" aria-label="Beschreibung">
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-prepend">
-            <span class="input-group-text">Datum</span>
-        </div>
-        <input type="date" id="date${eventCount}" class="form-control" aria-label="Datum">
-    </div>
-    <div class="input-group mb-3">
-        <div class="input-group-prepend">
-            <span class="input-group-text">Ort</span>
-        </div>
-        <input type="text" id="loc${eventCount}" class="form-control" aria-label="Ort">
+        <textarea class="form-control" id="desc${eventCount}" rows="1" aria-label="Beschreibung"></textarea>
     </div>
 </div>
 </div>`
